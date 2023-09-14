@@ -6,5 +6,5 @@ from django.views.generic import TemplateView
 class DashboardView(TemplateView):
     template_name = "dashboard.html"
 
-class WeatherView(TemplateView):
-    template_name="weather.html"
+# class WeatherView(TemplateView):
+#     template_name="weather.html"

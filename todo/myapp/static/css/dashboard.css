@@ -17,6 +17,10 @@
 	--sidebar-width: 250px;
 }
 
+.container_id{
+	position: relative;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -377,3 +381,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+/* .widget_container{
+	position: relative;
+} */

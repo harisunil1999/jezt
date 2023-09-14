@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp.views import DashboardView,WeatherView
+from myapp.views import DashboardView
 from todoapp import views
 
 
@@ -25,7 +25,7 @@ from todoapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard/', DashboardView.as_view(), name='dashboard'),
-        path('weather/', WeatherView.as_view(), name='weather'),
+        # path('weather/', WeatherView.as_view(), name='weather'),
 
     path('todos/',views.ToDoListView.as_view(), name='todo_list'),
     path('todos/add/', views.ToDoCreateView.as_view(), name='todo_create'),

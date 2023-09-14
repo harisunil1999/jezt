@@ -21,7 +21,7 @@ function displayWeather(data){
     let tem=data.main.temp
     let date=new Date().toLocaleDateString()
     let htmldata=`
-    <article class="widget">
+    <div class="widget" >
     <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
       <div class="weatherInfo">
     <div class="temperature"><span>${tem}&deg;</span></div>
@@ -31,9 +31,7 @@ function displayWeather(data){
     </div>
   </div>
   <div class="date">${date}</div>
-  </article>
-    
-    ` 
+  </div>` 
     document.querySelector("#id_result").innerHTML=htmldata   
 }
 
